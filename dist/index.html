@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ALMIRA — music, videos, shows, merchandise, and contact.">
+  <meta name="theme-color" content="#000000">
+  <title>ALMIRA — Official Website</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='black'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='Georgia' font-size='26' fill='%23e8e8e1'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="film.js" defer></script>
+  <script src="burn.js" defer></script>
+</head>
+<body>
+  <div class="intro-photo" aria-hidden="true"></div>
+  <canvas id="film-scratches" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip introduction</a>
+  <section class="intro" aria-label="ALMIRA introduction">
+    <div class="intro-stage">
+      <div class="identity" aria-hidden="true">
+        <div class="rune" id="rune"></div>
+        <div class="identity-title"><span class="identity-name"><img class="identity-wordmark" src="assets/almira-wordmark.png" alt="ALMIRA" width="4096" height="558" fetchpriority="high"></span><span class="identity-location">BOISE, ID</span></div>
+      </div>
+      <h1 class="sr-only">ALMIRA</h1>
+    </div>
+  </section>
+  <div class="site">
+    <header class="header">
+      <a class="wordmark" href="#main" aria-label="ALMIRA main website">ALMIRA</a>
+      <nav aria-label="Main navigation">
+        <a href="#music">Music</a><a href="#videos">Videos</a><a href="#about">About</a><a href="#shows">Shows</a><a href="#merch">Merch</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="content-section" id="music" aria-labelledby="music-title">
+        <div class="section-label"><span aria-hidden="true">01</span><h2 id="music-title">Music</h2></div>
+        <div class="section-body" id="music-content"><p class="announcement">Coming soon</p></div>
+      </section>
+      <section class="content-section" id="videos" aria-labelledby="videos-title">
+        <div class="section-label"><span aria-hidden="true">02</span><h2 id="videos-title">Videos</h2></div>
+        <div class="section-body" id="videos-content"><a class="announcement video-channel" href="https://www.youtube.com/@AlmiraBandOfficial" target="_blank" rel="noopener noreferrer">VISIT OUR YOUTUBE CHANNEL →</a></div>
+      </section>
+      <section class="content-section" id="about" aria-labelledby="about-title">
+        <div class="section-label"><span aria-hidden="true">03</span><h2 id="about-title">About</h2></div>
+        <div class="section-body biography"><p class="eyebrow" hidden>Placeholder biography</p><p id="biography">We are Almira. Founded in the heart of Boise, Idaho, we are a group of different minds, all united by the same thing: passion for heavy music. We hope to bring the same joy that we have to the ears of our listeners and fans. Follow us along our journey and we will not disappoint.</p></div>
+      </section>
+      <section class="content-section" id="shows" aria-labelledby="shows-title">
+        <div class="section-label"><span aria-hidden="true">04</span><h2 id="shows-title">Shows</h2></div>
+        <div class="section-body" id="shows-content"><p class="announcement">STAY TUNED</p></div>
+      </section>
+      <section class="content-section" id="merch" aria-labelledby="merch-title">
+        <div class="section-label"><span aria-hidden="true">05</span><h2 id="merch-title">Merch</h2></div>
+        <div class="section-body" id="merch-content"><a class="merch-link" href="/merch" target="_self">Check out our merch <span aria-hidden="true">→</span></a><div id="merch-placeholder" hidden><p class="announcement" role="status">Coming soon</p></div></div>
+      </section>
+      <section class="content-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-label"><span aria-hidden="true">06</span><h2 id="contact-title">Contact</h2></div>
+        <div class="section-body" id="contact-content"><p class="contact-row">Instagram: <a href="https://www.instagram.com/almira_band_official/" target="_blank" rel="noopener noreferrer">@Almira_band_official</a></p><p class="contact-row">Email: <a href="mailto:almirabandofficial@gmail.com">almirabandofficial@gmail.com</a></p></div>
+      </section>
+    </main>
+    <footer><span class="wordmark">ALMIRA</span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+  <section class="film-burn" aria-label="Cinematic film-burn transition">
+    <div class="film-burn-stage"><canvas id="film-burn-frame" aria-hidden="true"></canvas></div>
+  </section>
+  <noscript><style>.intro{height:100svh}.identity-title,.identity-name,.identity-location{opacity:1;filter:none}.rune{display:none}#merch-placeholder[hidden]{display:block}</style></noscript>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+# Local credentials, tooling, and old Sites provider metadata.
+.openai/
+.sites-runtime/
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+*.zip
+.DS_Store
+Thumbs.db
+# dist/ is the authored website: DO commit it.

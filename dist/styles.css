@@ -1,0 +1,69 @@
+:root{color-scheme:dark;--black:#000;--paper:#e8e8e1;--muted:#93988f;--almira-accent:#1D7552;--rune-color:#174A32;--rune-scale:1.15;--wordmark-scale:1.35;--line:color-mix(in srgb,var(--almira-accent) 28%,transparent);--intro-progress:0;--intro-forest-brightness:.68;--resting-forest-brightness:.20;--forest-blur:3px;font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--paper)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:120px}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:2px solid var(--almira-accent);outline-offset:8px}::selection{background:var(--almira-accent);color:#fff}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:fixed;top:20px;left:20px;z-index:20;padding:14px 20px;background:var(--paper);color:#000;transform:translateY(-200%)}.skip-link:focus{transform:none}
+.intro{height:154vh;height:154svh;position:relative;background:transparent}.intro-stage{position:sticky;top:0;height:100vh;height:100svh;display:grid;place-items:center;overflow:hidden}.identity{position:relative;width:100%;height:100%;display:grid;place-items:center}.rune,.identity-title{grid-area:1/1}.rune{width:min(calc(48vw * var(--rune-scale)),calc(500px * var(--rune-scale)),88vw);height:min(calc(65svh * var(--rune-scale)),calc(550px * var(--rune-scale)),82svh);position:relative;opacity:calc(1 - var(--intro-progress));filter:blur(calc(var(--intro-progress)*18px));will-change:opacity,filter}.identity-title{font-family:Georgia,'Times New Roman',serif;font-size:clamp(42px,8.6vw,132px);font-weight:400;letter-spacing:.13em;padding-left:.13em;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:.26em;line-height:1.1;}
+.site{max-width:1440px;margin:auto;padding:0 clamp(24px,6vw,96px)}.header{position:sticky;top:0;z-index:5;background:rgba(0,0,0,.96);display:flex;align-items:center;justify-content:space-between;gap:30px;padding:30px 0;border-bottom:1px solid var(--line)}.wordmark{font-family:Georgia,'Times New Roman',serif;font-size:24px;letter-spacing:.18em}nav{display:flex;flex-wrap:wrap;gap:clamp(16px,2.8vw,40px)}nav a,.eyebrow,footer a{font-size:10px;letter-spacing:.17em;text-transform:uppercase}nav a{color:var(--muted);padding:8px 0;transition:color .2s}nav a:hover,nav a[aria-current]{color:var(--almira-accent)}
+main{outline:none}.content-section{display:grid;grid-template-columns:1fr 1.7fr;gap:40px;padding:clamp(72px,10vw,140px) 0;border-bottom:1px solid var(--line);scroll-margin-top:30px}.section-label{display:flex;align-items:baseline;gap:22px}.section-label>span{font-size:10px;color:var(--muted);letter-spacing:.1em}h2{margin:0;font-size:clamp(13px,1.5vw,18px);font-weight:400;letter-spacing:.25em;text-transform:uppercase}.section-body{align-self:center}.announcement{margin:0;font-size:clamp(12px,1.3vw,15px);font-weight:400;letter-spacing:.2em;text-transform:uppercase;line-height:1.8;color:var(--muted)}.eyebrow{color:var(--muted);margin:0 0 24px}.biography>p:last-child{margin:0;max-width:560px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(23px,2.5vw,36px);line-height:1.5;font-weight:400}.merch-link{display:flex;justify-content:space-between;align-items:center;gap:24px;width:100%;padding:0 0 18px;background:transparent;color:var(--paper);border:0;border-bottom:1px solid var(--line);text-align:left;text-transform:uppercase;font-size:clamp(13px,1.6vw,20px);letter-spacing:.15em;cursor:pointer;transition:border-color .2s}.merch-link:hover{border-color:var(--almira-accent)}.merch-link span{font-size:26px}#merch-placeholder{padding-top:26px}footer{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:50px 0 70px;color:var(--muted)}footer .wordmark{font-size:18px}.show-list{list-style:none;padding:0;margin:0}.show-row{display:grid;grid-template-columns:1fr 2fr 2fr 1fr;gap:20px;border-bottom:1px solid var(--line);padding:20px 0;font-size:14px;line-height:1.6}.show-row time{color:var(--muted)}.media-list,.product-list{display:grid;gap:28px}.media-list a{display:block;padding:20px 0;border-bottom:1px solid var(--line);line-height:1.6}.product-list{grid-template-columns:repeat(2,minmax(0,1fr))}.product-list img{width:100%;aspect-ratio:1;object-fit:cover}.product-list h3{font-size:16px;font-weight:400}.product-list p{color:var(--muted)}
+@media(max-width:700px){html{scroll-padding-top:150px}.rune{width:min(calc(70vw * var(--rune-scale)),88vw);height:min(calc(55svh * var(--rune-scale)),82svh)}.identity-title{font-size:clamp(35px,10vw,70px);letter-spacing:.1em}.header{flex-direction:column;align-items:flex-start;gap:18px;padding:22px 0}nav{width:100%;justify-content:space-between;gap:10px}nav a{font-size:9px;letter-spacing:.08em}.content-section{grid-template-columns:1fr;gap:36px;padding:72px 0}.section-label{gap:18px}.section-body{padding-left:32px}.show-row{grid-template-columns:1fr 1fr}.product-list{grid-template-columns:1fr}footer{padding-bottom:45px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro{height:100svh}.rune{display:none}.identity-title{opacity:1;filter:none;will-change:auto}nav a,.merch-link{transition:none}}
+
+.rune::before{content:'';position:absolute;inset:0;background:var(--rune-color);mask:var(--rune-mask) center/contain no-repeat;-webkit-mask:var(--rune-mask) center/contain no-repeat}
+
+/* One fixed image spans the intro and main site. Both brightnesses are absolute;
+   opening is .68 (15% less than .80), while resting remains .20.
+   Existing eased scroll progress interpolates both directions without a trigger. */
+body{position:relative;isolation:isolate}
+.intro-photo{position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('assets/forest.jpg') center/cover no-repeat;filter:blur(var(--forest-blur));opacity:calc(var(--intro-forest-brightness) + (var(--resting-forest-brightness) - var(--intro-forest-brightness)) * var(--intro-progress));will-change:opacity}
+@media(prefers-reduced-motion:reduce){.intro-photo{opacity:var(--resting-forest-brightness);will-change:auto}}
+
+
+
+footer a:hover,.media-list a:hover,#contact-content a:hover{color:var(--almira-accent)}
+.merch-link:hover span{color:var(--almira-accent)}
+
+
+
+
+
+
+
+
+
+
+
+.identity-name{opacity:var(--intro-progress);filter:blur(calc((1 - var(--intro-progress))*24px));will-change:opacity,filter}
+.identity-location{font-family:Arial,Helvetica,sans-serif;font-size:.23em;letter-spacing:.35em;padding-left:.35em;color:#a6aaa4;opacity:var(--intro-progress);filter:blur(calc((1 - var(--location-progress,0))*24px));will-change:opacity,filter}
+@media(prefers-reduced-motion:reduce){.identity-name,.identity-location{opacity:1;filter:none;will-change:auto}}
+
+
+
+/* Preserve the heading line box and existing blur/fade on its wrapper. */
+.identity-name{display:flex;align-items:center;justify-content:center;width:4.65em;max-width:80vw;height:1.1em}
+.identity-wordmark{display:block;width:calc(100% * var(--wordmark-scale));max-width:88vw;height:auto;flex-shrink:0;object-fit:contain}
+
+
+
+.contact-row{margin:0;font-size:clamp(13px,1.5vw,18px);line-height:1.8;color:var(--muted)}
+.contact-row + .contact-row{margin-top:20px}
+.contact-row a{color:var(--paper);overflow-wrap:anywhere;text-underline-offset:4px;transition:color .2s}
+.contact-row a:hover{color:var(--almira-accent)}
+@media(prefers-reduced-motion:reduce){.contact-row a{transition:none}}
+
+
+
+
+#film-scratches{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:0}
+@media(prefers-reduced-motion:reduce){#film-scratches{display:none}}
+
+
+.film-burn{height:55vh;height:55svh;position:relative;pointer-events:none}.film-burn-stage{position:fixed;inset:0;z-index:10;height:100vh;height:100svh;overflow:hidden;pointer-events:none}#film-burn-frame{display:block;width:100%;height:100%}@media(prefers-reduced-motion:reduce){.film-burn{display:none}}
+
+
+
+.video-channel{display:inline-block;transition:color .2s}.video-channel:hover{color:var(--almira-accent)}@media(prefers-reduced-motion:reduce){.video-channel{transition:none}}
+
+
+/* Keep the entire visible CTA in its own hit-test layer; native anchor navigation. */
+#merch-content > a.merch-link{position:relative;z-index:1;pointer-events:auto}
+#merch-content > a.merch-link > span{pointer-events:none}
+
